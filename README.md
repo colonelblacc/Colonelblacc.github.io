@@ -19,13 +19,15 @@ Live Demo: [colonelblacc.github.io/Embedded-Systems-SkillTree](https://colonelbl
 
 ## 🛠️ Getting Started & Local Development
 
-### 1. Build System Setup
-The project uses a Python script (`build.py`) to merge the interactive visual SVG with the HTML layout template. Do **not** edit `index.html` directly, as it will be overwritten.
+### 1. Build System & Files
+The public repository includes:
+*   `index.html`: The main compiled webpage served on GitHub Pages.
+*   `index.template.html`: The template file containing styling and interactive scripts (for reference/version history).
 
-To make adjustments:
-1. Edit logic or styles in `index.template.html`.
-2. Edit SVG nodes, layouts, or texts in `MakerSkillTree - embedded_systems.svg`.
-3. Run the compiler:
+The compiler script (`build.py`) and the raw vector layout (`MakerSkillTree - embedded_systems.svg`) are kept offline and are not uploaded to the public GitHub repository.
+
+*   **Public Contributions**: If you wish to make code or styling improvements, edit `index.html` directly, or submit a PR on `index.template.html`.
+*   **Maintainer Compilations (Local Only)**: For maintainers with access to the local build files, compile changes by running:
     ```bash
     python build.py
     ```
